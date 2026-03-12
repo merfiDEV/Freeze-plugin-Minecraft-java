@@ -1,0 +1,26 @@
+# Build outputs
+FreezePlugin/target/
+
+# Maven local cache (project scoped)
+FreezePlugin/.m2_repo/
+
+# IDE and tooling
+FreezePlugin/.classpath
+FreezePlugin/.project
+FreezePlugin/.factorypath
+FreezePlugin/.settings/
+FreezePlugin/.idea/
+FreezePlugin/*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and crash reports
+FreezePlugin/*.log
+FreezePlugin/hs_err_pid*
+
+# Misc workspace artifacts (not part of project)
+.playwright-mcp/
+.qwen/
+FreezePlugin.rar

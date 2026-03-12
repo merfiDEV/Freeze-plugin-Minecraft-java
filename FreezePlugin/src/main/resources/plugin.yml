@@ -1,0 +1,17 @@
+name: FreezePlugin
+version: '1.0'
+main: com.freeze.freezeplugin.FreezePlugin
+api-version: '1.21'
+description: Plugin to freeze/unfreeze players with /fz command
+author: Developer
+
+commands:
+  fz:
+    description: Freeze or unfreeze a player
+    usage: /fz <player>
+    permission: freezeplugin.use
+
+permissions:
+  freezeplugin.use:
+    description: Allows using /fz command
+    default: op
