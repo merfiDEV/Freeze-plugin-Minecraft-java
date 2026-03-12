@@ -24,3 +24,5 @@ FreezePlugin/hs_err_pid*
 .playwright-mcp/
 .qwen/
 FreezePlugin.rar
+RULES.MD
+rules.md
