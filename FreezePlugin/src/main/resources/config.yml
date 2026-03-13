@@ -1,0 +1,48 @@
+# ======================================================
+# FreezePlugin Configuration
+# ======================================================
+
+# Настройки сообщений (поддерживает & для цветов)
+messages:
+  prefix: "&b❄ &fFreeze&bPlugin &8| "
+  no-permission: "&cУ вас нет прав!"
+  player-not-found: "&cИгрок не найден!"
+  usage: "&cИспользование: /fz <ник>"
+  
+  freeze:
+    admin-notify: "&aИгрок &e%player% &aзаморожен."
+    target-notify:
+      - "&f "
+      - "&c&l❄ ВЫ ЗАМОРОЖЕНЫ АДМИНИСТРАТОРОМ ❄"
+      - "&cЕсли вы выйдете из игры, вы получите &4&lБАН&c!"
+      - "&f "
+    
+  unfreeze:
+    admin-notify: "&aИгрок &e%player% &aразморожен."
+    target-notify: "&a✅ Вы были разморожены. Приятной игры!"
+
+# Действия при выходе игрока во время заморозки
+quit-check:
+  enabled: true
+  # Команда, которая выполнится от имени консоли
+  # Доступные переменные: %player%
+  command: "ban %player% 30d Попытка обхода проверки (Выход из игры)"
+  # Сообщение в консоль/админам
+  notify-admins: "&c⚠ Игрок &e%player% &cвышел во время заморозки и был наказан!"
+
+# Визуальные эффекты
+effects:
+  blindness: true
+  slowness-level: 255
+  # Создавать ледяную клетку вокруг игрока
+  ice-cage:
+    enabled: true
+    material: "BLUE_STAINED_GLASS"
+  # Тикер/Title на экран
+  titles:
+    enabled: true
+    title: "&b❄ &lВЫ ЗАМОРОЖЕНЫ &b❄"
+    subtitle: "&cНе выходите из игры!"
+    fade-in: 10
+    stay: 70
+    fade-out: 20
