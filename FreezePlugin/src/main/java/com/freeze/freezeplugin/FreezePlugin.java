@@ -1,6 +1,7 @@
 package com.freeze.freezeplugin;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -28,7 +29,12 @@ public final class FreezePlugin extends JavaPlugin implements CommandExecutor, T
         getCommand("fz").setExecutor(this);
         getCommand("fz").setTabCompleter(this);
         getServer().getPluginManager().registerEvents(this, this);
-        getLogger().info("FreezePlugin enabled!");
+        getServer().getConsoleSender().sendMessage(
+                ChatColor.AQUA + "❄❄❄ " + ChatColor.WHITE + "FreezePlugin" + ChatColor.AQUA + " ❄❄❄"
+        );
+        getServer().getConsoleSender().sendMessage(
+                ChatColor.GRAY + "Loaded" + ChatColor.DARK_GRAY + " | " + ChatColor.GREEN + "Ready to freeze."
+        );
     }
 
     @Override
